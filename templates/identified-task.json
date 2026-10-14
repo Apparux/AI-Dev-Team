@@ -1,0 +1,12 @@
+{
+  "run_id": "<run id>",
+  "task_id": "<task id>",
+  "owner_role": "developer",
+  "objective": "<one checkable non-business deliverable>",
+  "scope": ["README.md"],
+  "depends_on": [],
+  "workspace": "<approved absolute Run worktree>",
+  "context_refs": ["README.md"],
+  "acceptance": ["<criterion to verify against actual artifacts and checks>"],
+  "required_stages": {"work": "developer", "verify": "verifier"}
+}

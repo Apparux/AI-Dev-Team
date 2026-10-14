@@ -1,0 +1,19 @@
+{
+  "protocol": "identified-delivery-v1",
+  "run_id": "<dispatch.run_id>",
+  "task_id": "<dispatch.task_id>",
+  "attempt_id": "<dispatch.attempt_id>",
+  "phase": "<dispatch.phase>",
+  "role": "<dispatch.role>",
+  "executor": {"executor_id": "<binding.executor.executor_id>", "pane_id": "<actual pane>", "session_id": "<actual session>", "kind": "<actual harness>"},
+  "rules_digest": "<dispatch.rules_digest>",
+  "input_version": {"base_commit": "<baseline>", "head_commit": "<baseline>", "artifacts": [{"path": "<absolute input>", "sha256": "<actual hash>"}]},
+  "output_version": {"base_commit": "<baseline>", "head_commit": "<baseline>", "artifacts": [{"path": "<absolute artifact>", "sha256": "<actual hash>"}]},
+  "outcome": "PASS",
+  "summary": "<observed outcome, not an assertion of Task completion>",
+  "changes": {"code": [], "artifacts": []},
+  "checks": [{"argv": ["<actual executable and arguments>"], "cwd": "<this Attempt cwd>", "exit_code": 0, "evidence": {"path": "<this Attempt evidence JSON>", "sha256": "<actual hash>"}}],
+  "risks": [],
+  "handoff_refs": [],
+  "findings": []
+}

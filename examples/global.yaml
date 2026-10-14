@@ -1,0 +1,19 @@
+{
+  "assets_root": "..",
+  "execution": {"backend": "herdr"},
+  "harnesses": {
+    "claude_default": {"kind": "claude", "start_args": ["--permission-mode", "bypassPermissions", "--model", "fable"]},
+    "codex_default": {"kind": "codex", "start_args": ["--no-daemon", "--yolo", "--model", "gpt-6.1-sol"]}
+  },
+  "skills": {
+    "orchestrator": {"directory": "skills/orchestrator"},
+    "development": {"directory": "skills/development"}
+  },
+  "roles": {
+    "manager": {"definition": "roles/manager.md", "harness": "claude_default", "skills": ["orchestrator"]},
+    "developer": {"definition": "roles/developer.md", "harness": "claude_default", "skills": ["development"]}
+  },
+  "workflow": "workflows/readonly.md",
+  "template": "templates/readonly-result.md",
+  "policies": {"allowed_paths": ["."], "require_approval": ["write", "network", "git_mutation"], "require_review": false}
+}

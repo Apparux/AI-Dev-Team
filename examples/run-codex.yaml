@@ -1,0 +1,6 @@
+{
+  "objective": "读取 README.md：报告项目名称、主模块和项目声明的验证命令；给出文件行号，并说明本次未运行验证命令。",
+  "worker_role": "developer",
+  "context_refs": ["README.md"],
+  "policies": {"allowed_paths": ["README.md", "AGENTS.md"]}
+}

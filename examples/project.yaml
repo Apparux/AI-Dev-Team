@@ -1,0 +1,12 @@
+{
+  "project": {
+    "id": "m1-02-fixture",
+    "repository": "/path/to/acceptance-repository",
+    "validation_commands": ["python3 -m unittest discover"],
+    "scope": ["README.md"],
+    "rules": ["AGENTS.md"],
+    "resources": {"mode": "none"}
+  },
+  "roles": {"developer": {"harness": "codex_default"}},
+  "policies": {"allowed_paths": ["README.md", "AGENTS.md"]}
+}

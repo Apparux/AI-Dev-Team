@@ -1,0 +1,9 @@
+{
+  "action": "handoff",
+  "run_id": "<run id>",
+  "old_owner": {"id": "<current supervisor>", "generation": 1},
+  "new_owner_id": "<approved next supervisor>",
+  "decision": "approved",
+  "pending_attempts": [],
+  "reason": "<actual explicit user decision and evidence; no timeout-based takeover>"
+}

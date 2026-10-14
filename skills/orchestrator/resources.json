@@ -1,0 +1,3 @@
+{
+  "required_files": ["references/configuration.md", "references/identified.md", "scripts/configure.py", "scripts/state.py"]
+}
